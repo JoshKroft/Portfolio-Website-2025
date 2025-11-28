@@ -1,0 +1,25 @@
+.contact {
+    padding: 100px;
+    align-items: center;
+}
+
+.contact-title{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    text-align: center;
+    width: 50%;
+}
+
+.contact-container{
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    padding: 24px;
+}

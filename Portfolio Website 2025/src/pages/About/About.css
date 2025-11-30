@@ -1,9 +1,24 @@
 
-.about-container {
+.parent-container {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
     padding: 100px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    border: white;
+    width: fit-content;
+    margin: 90px;
+    background-color: rgba(0, 255, 225, 0.516);
+    color: white;
+    border: rgba(255, 255, 255, 0.678) solid 5px;
+    border-radius: 15px;
+    padding: 20px;
 }
 
+.parent-constainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

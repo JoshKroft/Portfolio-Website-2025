@@ -2,7 +2,7 @@ import './About.css';
 
 function About() {
     return (
-        <section className="bg">
+        <div className="parent-container">
             <div className="about-container">
                 <p> 
                     <strong>I'm a Senior studying Computer Science at Missouri S&T</strong> with a passionate drive for software development and graphic design.
@@ -16,7 +16,20 @@ function About() {
                     I enjoy helping others and being a creative thinker that solves problems in unique ways. I now aspire to expand my technical skills through academic and personal projects.
                 </p>
             </div>
-        </section>
+            <div>
+                <h3>Tools I have used:</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Figma</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+        </div>
     )
 }
 

@@ -12,13 +12,13 @@ function Contact() {
             </div>
             <div className="contact-details">
                 <div className="contact-email">
-                    <p>littlepostage@gmail.com</p>
+                    <p><strong>littlepostage@gmail.com</strong></p>
                 </div>
                 <div className="contact-phone">
-                    <p>(417) 771 - 4040</p>
+                    <p><strong>(417) 771 - 4040</strong></p>
                 </div>
                 <div className="contact-location">
-                    <p>Springfield, MO</p>
+                    <p><strong>Springfield, MO</strong></p>
                 </div>
                 <form className="contact-form">
                     <label for>Your Name</label>

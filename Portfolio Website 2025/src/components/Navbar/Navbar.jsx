@@ -3,6 +3,7 @@ import './Navbar.css'
 function Navbar() {
     return (
         <nav className="navbar">
+            <h1><Link to="/" className="button">Joshua Kroft</Link></h1>
             <ul className="nav-links">
                 <li>
                     <Link to="/" className="button">Home</Link>

@@ -1,3 +1,5 @@
+
+
 .navbar {
   display: flex;
   align-items: center;
@@ -6,37 +8,51 @@
   height: 10vh;
   margin: 0;
   padding: 5px;
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(71, 164, 223) 49%, rgb(182, 201, 226) 49%, rgb(22, 163, 245) 100%); 
-  border-radius: 15px;
+  background: linear-gradient(to bottom, #0000 2px, #c9d0d9 2px, #b3c0cc 30%, #0000 30%),	linear-gradient(to bottom in oklch, #9eadbc 60%, #fff);
+  border: solid black;
+  border-width: 1px 0 1px 0;
+	box-shadow: 0 0 2px black;
 }
 
 .navbar li {
-  cursor: pointer;
-  list-style: none;
-  height: -15px;
+  height: 100%;
+	
+	display: flex;
+	align-items: center;
+	padding: 1em;
+
+	font-weight: 600;
+
+	transition: 200ms;
 }
 
 .navbar li:hover {
   text-decoration: underline;
+  background: #fff5
 }
 
 
 .navbar ul {
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-  list-style: none;
-  font-size: 20px;
+		display: flex;
+
+		list-style: none;
+		margin: 0 1rem;
+		padding: 0;
+
+		height: 100%;
 }
 
 
 .nav-links {
-  text-decoration: none;
-  color: white;
+  align-self: stretch
 }
 
 .button {
   text-decoration: none;
   color: white;
+}
+
+.nav {
+  align-self: stretch;
 }
 

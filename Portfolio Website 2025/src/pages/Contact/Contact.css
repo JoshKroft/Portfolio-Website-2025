@@ -22,4 +22,9 @@
     color: white;
     vertical-align: middle;
     padding: 24px;
+    background-color: rgba(0, 255, 225, 0.516);
+    color: white;
+    border: rgba(255, 255, 255, 0.678) solid 5px;
+    border-radius: 15px;
+    padding: 20px;
 }

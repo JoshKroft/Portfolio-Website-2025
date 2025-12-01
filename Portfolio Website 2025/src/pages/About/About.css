@@ -1,21 +1,23 @@
 
+.about-page{
+    display: flex;
+}
+
 .parent-container {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
-    padding: 20px;
-    color: white;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    border: white;
     width: fit-content;
     margin: 90px;
     background-color: rgba(0, 255, 225, 0.516);
     color: white;
     border: rgba(255, 255, 255, 0.678) solid 5px;
     border-radius: 15px;
-    height: 90vh;
 }
+
 
 .content-wrapper {
     display: flex;
@@ -32,11 +34,6 @@
     border-radius: 10px;
 }
 
-.parent-constainer {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .Tools ul {
     display: flex;
@@ -72,6 +69,12 @@
 
 .parent-container strong {
     text-decoration: underline;
+}
+
+.Development h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 

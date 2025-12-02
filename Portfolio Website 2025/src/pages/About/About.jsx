@@ -1,6 +1,7 @@
 
 import './About.css';
 import epicPhoto from '../../assets/epic photo.jpg';
+import Footer from '../../components/Footer';
 
 function About() {
     return (
@@ -33,6 +34,7 @@ function About() {
                         <li>JavaScript</li>
                         <li>Figma</li>
                         <li>Canva</li>
+                        <li>Aseprite</li>
                     </ul>
                 </div>
                 <div className="Development">

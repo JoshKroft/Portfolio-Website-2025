@@ -5,63 +5,62 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10vh;
+  height: 60px; /* fixed height keeps layout stable */
   margin: 0;
-  padding: 1px;
-  background: linear-gradient(to bottom, #00000000 2px, #c9d0d9 2px, #b3c0cc 30%, #00000000 30%),	linear-gradient(to bottom in oklch, #9eadbc 60%, #fff);
+  padding: 0 12px;
+  background: linear-gradient(to bottom, #00000000 2px, #c9d0d9 2px, #b3c0cc 30%, #00000000 30%),
+	linear-gradient(to bottom in oklch, #9eadbc 60%, #fff);
   border: solid black;
   border-width: 1px 0 1px 0;
-	box-shadow: 0 0 2px black;
+  box-shadow: 0 0 2px black;
   align-self: stretch;
-  box-sizing:  border-box;
+  box-sizing: border-box;
 }
 
 .navbar li {
   height: 100%;
-	display: flex;
-	align-items: center;
-	padding: 1em;
-	font-weight: 600;
-	transition: 200ms;
+  display: flex;
+  align-items: center;
+  padding: 0 12px; 
+  font-weight: 600;
+  transition: 200ms;
+  font-size: 15px; 
+  line-height: 1;
 }
 
 .navbar h1 {
-  margin: .5rem 1ch;
+  margin: 0 12px;
+  font-size: 18px;
 }
 
 .navbar li:hover {
   text-decoration: underline;
-  background: #fff5
+  background: #fff5;
 }
 
 .navbar h1:hover {
   text-decoration: underline;
-  background: #fff5
+  background: #fff5;
 }
 
 .navbar h1 {
   height: 100%;
-	
-	display: flex;
-	align-items: center;
-  
-	padding: 1em;
-
-	font-weight: 600;
-
-	transition: 200ms;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-weight: 600;
+  transition: 200ms;
 }
 
 
 .navbar ul {
-		display: flex;
-    
-		list-style: none;
-		margin: 0 1rem;
-		padding: 0;
+    display: flex;
 
-		height: 100%;
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0;
 
+    height: 100%;
 }
 
 
@@ -76,5 +75,24 @@
 
 .nav {
   align-self: stretch;
+}
+
+
+.navbar li a,
+.navbar li span {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: inherit;
+}
+.button.active {
+  background: #e9eef6;
+  box-shadow: inset 0 4px 8px rgba(0,0,0,0.25);
+  transform: translateY(1px);
+  border-radius: 6px;
+}
+
+.button.active:hover {
+  /* keep hover subtle when already active */
+  background: #f3f6fb;
 }
 

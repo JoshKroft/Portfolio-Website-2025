@@ -1,6 +1,22 @@
 import './Contact.css';
+import React from 'react';
+import Footer from '../../components/Footer';
 
 function Contact() {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        const subject = `Portfolio message from ${name || 'Visitor'}`;
+        const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+
+        // Open user's email client with prefilled email to littlepostage@gmail.com
+        window.location.href = `mailto:littlepostage@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+    };
+
     return(
         <div className="contact-container">
             <div className="contact-title">
@@ -20,16 +36,17 @@ function Contact() {
                 <div className="contact-location">
                     <p><strong>Springfield, MO</strong></p>
                 </div>
-                <form action="mailto:littlepostage@gmail.com" method="post" enctype="text/plain" className="contact-form">
-                    <label for>Your Name</label>
-                    <input placeholder="Enter Your Name" type="text" name="name" required></input>
-                    <label for>Your Email</label>
-                    <input placeholder="Enter Your Email" type="email" name="email" required></input>
-                    <label for>Your Message Here</label>
-                    <textarea placeholder="message" rows="8" name="message" required></textarea>
-                    <button type="submit" className="contact-submit">Message</button>
-                </form>
             </div>
+
+            <form onSubmit={handleSubmit} className="contact-form">
+                <label htmlFor="name">Your Name:</label>
+                <input id="name" placeholder="Enter Your Name" type="text" name="name" required />
+                <label htmlFor="email">Your Email:</label>
+                <input id="email" placeholder="Enter Your Email" type="email" name="email" required />
+                <label htmlFor="message">Your Message Here:</label>
+                <textarea id="message" placeholder="message" rows="8" name="message" required></textarea>
+                <button type="submit" className="contact-submit">Send Message</button>
+            </form>
         </div>
     )
 }

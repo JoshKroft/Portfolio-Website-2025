@@ -7,11 +7,12 @@
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    width: fit-content;
-    margin: 90px;
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    margin: 40px auto;
     background-color: rgba(0, 255, 225, 0.516);
     color: white;
     border: rgba(255, 255, 255, 0.678) solid 5px;
@@ -23,6 +24,7 @@
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .content-wrapper img {
@@ -32,6 +34,10 @@
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+}
+
+.about-container {
+    max-width: 640px;
 }
 
 
@@ -46,7 +52,7 @@
 
 .Tools h3 {
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 100%;
 }
 
@@ -73,7 +79,7 @@
 
 .Development h3 {
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 100%;
 }
 

@@ -8,15 +8,15 @@ import './App.css'
 
 function AppRoutes() {
   const location = useLocation();
-  const isProjects = location.pathname === '/projects' || location.pathname === '/projects/';
+  const isProjects = location.pathname === '/Portfolio-Website-2025/projects' || location.pathname === '/Portfolio-Website-2025/projects/';
   return (
     <div className={isProjects ? 'aurora projects-bg' : 'aurora'}>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/Portfolio-Website-2025/" element={<Layout />}>
           <Route index element={<Home />} /> 
-          <Route path="projects" element={<Projects />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="/Portfolio-Website-2025/projects" element={<Projects />} />
+          <Route path="/Portfolio-Website-2025/about" element={<About />} />
+          <Route path="/Portfolio-Website-2025/contact" element={<Contact />} />
         </Route>
       </Routes>
     </div>

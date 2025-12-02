@@ -3,19 +3,19 @@ import './Navbar.css'
 function Navbar() {
     return (
         <nav className="navbar">
-            <h1><Link to="/" className="button">Joshua Kroft</Link></h1>
+            <h1><Link to="/Portfolio-Website-2025/" className="button">Joshua Kroft</Link></h1>
             <ul className="nav-links">
                 <li>
-                    <Link to="/" className="button">Home</Link>
+                    <Link to="/Portfolio-Website-2025/" className="button">Home</Link>
                 </li>
                 <li>
-                    <Link to={"/About"} className="button">About</Link>
+                    <Link to={"/Portfolio-Website-2025/About"} className="button">About</Link>
                 </li>
                 <li>
-                    <Link to={"/Projects"} className="button">Projects</Link>
+                    <Link to={"/Portfolio-Website-2025/Projects"} className="button">Projects</Link>
                 </li>
                 <li>
-                    <Link to={"/Contact"} className="button">Contact</Link>
+                    <Link to={"/Portfolio-Website-2025/Contact"} className="button">Contact</Link>
                 </li>       
             </ul>
         </nav>
